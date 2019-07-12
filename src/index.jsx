@@ -15,7 +15,7 @@ class App extends Component {
       authorized: false,
       evaluatedCLickId: 0,
     };
-  }
+  };
 
   handleAuth = () => {
     this.setState({
