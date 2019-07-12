@@ -11,9 +11,8 @@ export default class RecommendationsData extends Component {
 
   componentDidMount() {
     const serverIp = '127.0.0.1:8000';
-    const myId = 1;
 
-    fetch(`http://${serverIp}/recommendation/new/${myId}`, {mode: 'cors'})
+    fetch(`http://${serverIp}/recommendation/new/`, {mode: 'cors'})
         .then((response) => response.json())
         .then((response) => {
           this.setState({

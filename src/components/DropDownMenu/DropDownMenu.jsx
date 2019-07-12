@@ -10,10 +10,14 @@ export default class DropDownMenu extends PureComponent {
       return (
         <ul className="drop_down_menu">
           <li className="drop_down_menu_li">
-            <span className="drop_down_menu_href"><CurrentUserData property="age"/></span>
+            <span className="drop_down_menu_href">
+              <CurrentUserData property="age"/>
+            </span>
           </li>
           <li className="drop_down_menu_li">
-            <span className="drop_down_menu_href"><CurrentUserData property="email"/></span>
+            <span className="drop_down_menu_href">
+              <CurrentUserData property="email"/>
+            </span>
           </li>
           <li className="drop_down_menu_li getPremium">
             <a className="drop_down_menu_href" href="#">Get premium</a>

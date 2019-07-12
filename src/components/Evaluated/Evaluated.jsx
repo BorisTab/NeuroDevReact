@@ -1,15 +1,14 @@
 import React, {PureComponent} from 'react';
 import './Evaluated.css';
 
-import EvaluatedUser from './EvaluatedUser';
+import EvaluatedUserData from 'containers/EvaluatedUserData';
 
 export default class Evaluated extends PureComponent {
   render() {
+    const {userClick} = this.props;
     return (
       <div className="evaluated">
-        <EvaluatedUser/>
-        <EvaluatedUser/>
-        <EvaluatedUser/>
+        <EvaluatedUserData userClick={userClick}/>
       </div>
     );
   }

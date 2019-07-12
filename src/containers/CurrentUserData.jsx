@@ -14,8 +14,7 @@ export default class CurrentUserData extends Component {
 
   componentDidMount() {
     const serverIp = '127.0.0.1:8000';
-    const myId = 1;
-    fetch(`http://${serverIp}/user/get/${myId}`, {mode: 'cors'})
+    fetch(`http://${serverIp}/user/get/`, {mode: 'cors'})
         .then((response) => response.json())
         .then((response) => {
           const currentUser = response.message;
@@ -30,7 +29,6 @@ export default class CurrentUserData extends Component {
         .catch((error) => console.log(error));
   }
   render() {
-    console.log(this.state.avatar);
     const {property} = this.props;
     return (
       <div>{this.state[property]}</div>
